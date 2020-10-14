@@ -5,8 +5,9 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...   
-edited by Rimpei Shiratori
+This application is used for tracking the amount of people during 
+transit periods to avoid heavy foot traffic. 
+Edited by Johnson, Rimpei.
 	
 ## Technologies
 Technologies used for this project:
