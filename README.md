@@ -5,7 +5,8 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This application is used for tracking the amount of people during 
+transit periods to avoid heavy foot traffic.
 	
 ## Technologies
 Technologies used for this project:
