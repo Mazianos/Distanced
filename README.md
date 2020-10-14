@@ -7,7 +7,7 @@
 ## General Info
 This application is used for tracking the amount of people during 
 transit periods to avoid heavy foot traffic. 
-Edited by Johnson, Rimpei.
+Edited by Johnson, Rimpei, Mazin.
 	
 ## Technologies
 Technologies used for this project:
