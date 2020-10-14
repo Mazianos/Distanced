@@ -5,7 +5,8 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This browser based web application to ...   
+edited by Rimpei Shiratori
 	
 ## Technologies
 Technologies used for this project:
