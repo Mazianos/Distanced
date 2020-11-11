@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My BCIT Project</title>
+    <meta name="comp1800 boilerplate code" content="my bcit project">
+    <meta name="author" content="BCIT">
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- these two lines are for the Auth UI library and CSS -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+</head>
+<body>
+    <div id="logo">DISTANCED</div>
+        <div id="current">
+            <label for="campus">Select your current campus:</label>
+            <select id="campus" name="campus">
+                <option value="Burnaby">Burnaby</option>
+                <option value="Downtown">Downtown</option>
+                <option value="Richmond">Richmond</option>
+                <option value="Marine">Marine</option>
+                <option value="Annacis Island">Annacis Island</option>
+            </select>
+        </div>
+        <div id="destination">
+            <label for="campus">Select your destination campus:</label>
+            <select id="campus" name="campus">
+                <option value="Burnaby">Burnaby</option>
+                <option value="Downtown">Downtown</option>
+                <option value="Richmond">Richmond</option>
+                <option value="Marine">Marine</option>
+                <option value="Annacis Island">Annacis Island</option>
+            </select>
+            <input type="submit">
+        </div>
+
+        <!--buttons to go back and forward-->
+        <a href="main.html"><button type="button" class="btn btn-secondary" >back</button></a>
+        <a href="main.html"><button type="button" class="btn btn-secondary">next page</button></a>
+</body>
+</html>
