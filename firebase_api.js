@@ -16,9 +16,14 @@ var firebaseConfig = {
       measurementId: "G-4VJN1CPNNN"
   
   };
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+
+  //added to avoid 
+  //Uncaught FirebaseError: Firebase: Firebase App named '[DEFAULT]' already exists (app/duplicate-app)
+  if(firebase.apps.length === 0){
+    firebase.initializeApp(firebaseConfig);
+  }
+  // Initialize Firebase  
+  //firebase.initializeApp(firebaseConfig);
   // Create the Firestore database object
   // Henceforce, any reference to the database can be made with "db"
   const db = firebase.firestore();
