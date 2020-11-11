@@ -1,0 +1,15 @@
+.display-4{
+    font-size: 32pt;
+    text-align: center;
+    font-weight: bold;
+}
+.covidwarning{
+    font-size: 24pt;
+    text-align: center;
+    
+}
+
+#btnlocation{
+   justify-content: center;
+   align-items: center;
+}

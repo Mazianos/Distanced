@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title><i>Distanced</i></title>
+    <title>Distanced</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -37,6 +37,9 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+
 </head>
 
 <body>
@@ -45,22 +48,20 @@
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
     <!-- Header Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href=""><i>Distanced</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="login.html">my data</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="profile.html">my profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signIn.html">login/signup</a>
-                </li>
+                </li> -->
+                
             </ul>
         </div>
     </nav>
@@ -71,16 +72,17 @@
     <h1 class="display-4">COVID-19 Warning</h1>
     <p class="lead"></p>
     <hr class="my-4">
-    <p>Have you travveled outside Canada within the last 14 days?</p>
-    <p>Or been in close contact with a confirmed or probably case of COVID-19?</p>
-    <p><b>OR</b></p>
-    <p>Do you have a fever, or cough, runny nose, sore throat or shortness of breath?</p>
-    <p><b>If yes, STOP</b> </p>
-    <P>Help prevent any potential spread of COVID-19</P>
-    <p>and other illnesses</p>
-    <p>Please do not visit today if you are unwell.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="signIn.html" role="button">Sign In/Login</a>
+    <p class="covidwarning">Have you traveled outside Canada within the last 14 days?</p>
+    <p class="covidwarning">Or been in close contact with a confirmed or probably case of COVID-19?</p>
+    <p class="covidwarning"><b>OR</b></p>
+    <p class="covidwarning">Do you have a fever, or cough, runny nose, sore throat or shortness of breath?</p>
+    <p class="covidwarning"><b>If yes, STOP</b> </p>
+    <P class="covidwarning">Help prevent any potential spread of COVID-19</P>
+    <p class="covidwarning">and other illnesses</p>
+    <p class="covidwarning">Please do not visit today if you are unwell.</p>
+    <p class="covidwarning"> <a id= btnlocation class="btn btn-primary btn-lg" href="signIn.html" role="button">Sign In/Login</a></p>
+    
+     
     </p>
   </div>
 
