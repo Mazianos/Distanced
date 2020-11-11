@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>My BCIT Project</title>
+    <title>Distanced</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -20,7 +20,26 @@
     <!-- these two lines are for the Auth UI library and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+            authDomain: "distanced-86fa9.firebaseapp.com",
+            databaseURL: "https://distanced-86fa9.firebaseio.com",
+            projectId: "distanced-86fa9",
+            storageBucket: "distanced-86fa9.appspot.com",
+            messagingSenderId: "167176184310",
+            appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
 </head>
+
+
+
 <body>
     <div id="logo">DISTANCED</div>
         <div id="current">
@@ -46,7 +65,7 @@
         </div>
 
         <!--buttons to go back and forward-->
-        <a href="main.html"><button type="button" class="btn btn-secondary" >back</button></a>
-        <a href="main.html"><button type="button" class="btn btn-secondary">next page</button></a>
+        <a href="main.html"><button type="button" class="btn btn-secondary" >Back</button></a>
+        <a href="main.html"><button type="button" class="btn btn-secondary">Next Page</button></a>
 </body>
 </html>
