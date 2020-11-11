@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signIn Page</title>
-    
+    <meta charset="utf-8">
+    <title><i>Distanced</i></title>
+    <meta name="comp1800 boilerplate code" content="my bcit project">
+    <meta name="author" content="BCIT">
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
     <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <!--for the Auth UI libraray and CSS-->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- these two lines are for the Auth UI library and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
-    <!-- copied from my firebase project -->
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-          apiKey: "AIzaSyCRkLcO88Yowoez58B6viaXztY-bQj-2BI",
-          authDomain: "mango-c979e.firebaseapp.com",
-          databaseURL: "https://mango-c979e.firebaseio.com",
-          projectId: "mango-c979e",
-          storageBucket: "mango-c979e.appspot.com",
-          messagingSenderId: "473837011754",
-          appId: "1:473837011754:web:6f3686f1e59070843d1453"
+            apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+            authDomain: "distanced-86fa9.firebaseapp.com",
+            databaseURL: "https://distanced-86fa9.firebaseio.com",
+            projectId: "distanced-86fa9",
+            storageBucket: "distanced-86fa9.appspot.com",
+            messagingSenderId: "167176184310",
+            appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-      </script>
+    </script>
 
 </head>
 <body>
@@ -40,7 +44,10 @@
      <h1>Welcome to Distanced. This is Signin page.</h1>
      <div id="firebaseui-auth-container"></div>
      <div id="loader">Loading...</div>
- 
+
+    <!--buttons to go back and forward-->
+    <a href="index.html"><button type="button" class="btn btn-secondary" >back</button></a>
+    <a href="main.html"><button type="button" class="btn btn-secondary">next page</button></a>
      
      <script>
          var ui = new firebaseui.auth.AuthUI(firebase.auth());

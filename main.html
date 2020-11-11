@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Distanced</title>
+    <title><i>Distanced</i></title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -11,49 +11,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- these two lines are for the Auth UI library and CSS -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+
     <!-- head content for the map -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
     <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of BCIT Burnaby Campus
-        const bcit_burnaby = { lat: 49.2495, lng: -123.0008 };
-        // The map, centered at BCIT Burnaby Campus
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 14,
-          center: bcit_burnaby,
-        });
-        // The marker, positioned at BCIT Burnaby Campus
-//        const marker = new google.maps.Marker({
-//          position: bcit_burnaby,
-//          map: map,
-//        });
-      }
+        // Initialize and add the map
+        function initMap() {
+            // The location of BCIT Burnaby Campus
+            const bcit_burnaby = {
+                lat: 49.2495,
+                lng: -123.0008
+            };
+            // The map, centered at BCIT Burnaby Campus
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: bcit_burnaby,
+            });
+
+        }
     </script>
 
     <style type="text/css">
-        
         #map-container {
             height: 100vh;
             width: 100vw;
         }
-        
+
         /* Set the size of the div element that contains the map */
         #map {
             height: 100%;
-            /* The height is 400 pixels */
+            /* The height is full */
             width: 100%;
             /* The width is the width of the web page */
         }
-        
     </style>
 
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+            authDomain: "distanced-86fa9.firebaseapp.com",
+            databaseURL: "https://distanced-86fa9.firebaseio.com",
+            projectId: "distanced-86fa9",
+            storageBucket: "distanced-86fa9.appspot.com",
+            messagingSenderId: "167176184310",
+            appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
 </head>
-    
+
 <body>
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
@@ -72,13 +95,14 @@
             </ul>
         </div>
     </nav>
-    
+
     <!----------------------------------------------->
     <!----       Code for the transit map        ---->
     <!----------------------------------------------->
-    <div id="map-container"><div id="map"></div></div>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
 
-  
     <!----------------------------------------------->
     <!--   JS: Boostrap, Firebase, API related     -->
     <!----------------------------------------------->
@@ -93,8 +117,9 @@
     </script>
 
     <!--------------------------------------------------------------------->
-    <!-- JS files: Your own JavaScript functions included here    -->
+    <!--      JS files: Your own JavaScript functions included here      -->
     <!--------------------------------------------------------------------->
 
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My BCIT Project</title>
+    <title><i>Distanced</i></title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -11,30 +11,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Copied from firebase documentation -->
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
 
-    <!-- These two lines are for the Auth UI library and CSS -->
+    <!-- these two lines are for the Auth UI library and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
-   
-    
-    <!-- Optional styles and scripts of your own -->
-    <link rel="stylesheet" href="styles/style.css" />
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+            authDomain: "distanced-86fa9.firebaseapp.com",
+            databaseURL: "https://distanced-86fa9.firebaseio.com",
+            projectId: "distanced-86fa9",
+            storageBucket: "distanced-86fa9.appspot.com",
+            messagingSenderId: "167176184310",
+            appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
 </head>
 
 <body>
-    
+
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
@@ -65,7 +71,14 @@
     <h1 class="display-4">COVID-19 Warning</h1>
     <p class="lead"></p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p>Have you travveled outside Canada within the last 14 days?</p>
+    <p>Or been in close contact with a confirmed or probably case of COVID-19?</p>
+    <p><b>OR</b></p>
+    <p>Do you have a fever, or cough, runny nose, sore throat or shortness of breath?</p>
+    <p><b>If yes, STOP</b> </p>
+    <P>Help prevent any potential spread of COVID-19</P>
+    <p>and other illnesses</p>
+    <p>Please do not visit today if you are unwell.</p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="signIn.html" role="button">Sign In/Login</a>
     </p>
