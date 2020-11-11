@@ -35,8 +35,9 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
     </script>
-
+    
 </head>
 
 <body>
@@ -96,7 +97,8 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-
+    <script src="firebase_api.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
