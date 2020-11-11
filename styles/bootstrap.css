@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #0496FF; 
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -18,14 +18,15 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #0496FF;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
+  --warning: #0496FF;
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --custom: #0496FF;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -415,8 +416,8 @@ h6, .h6 {
 }
 
 .display-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
+  font-size: 5.5rem;
+  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -3069,10 +3070,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  padding: .5rem 1rem;
+  font-size: 3rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -3969,9 +3970,11 @@ tbody.collapse.show {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: inherit;
   white-space: nowrap;
+  font-weight: bold;
+  
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -6075,7 +6078,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #0496FF !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
