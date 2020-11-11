@@ -17,6 +17,8 @@ var uiConfig = {
             var user = authResult.user;
             if (authResult.additionalUserInfo.isNewUser) {
                 db.collection("users").doc(user.uid).set({
+                        Current_Bus: "",
+                        Current_Trip: "",
                         name: user.displayName,
                         email: user.email
                     }).then(function () {
