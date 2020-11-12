@@ -13,3 +13,38 @@
    justify-content: center;
    align-items: center;
 }
+
+#crowdsourcetext{
+    font-size: 24pt;
+    text-align: center;
+}
+
+.crowdsourcebtn{
+    border-radius: 10pt;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #3E6680;
+    color: white;
+    font-size: 1.75em
+}
+
+.crowdsourcebtn:hover{
+    background-color: #00487c;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.crowdsourcebtncontainer{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+#thankyoutext{
+    font-size: 40px;
+    
+}
+
+#thankyoutextcontainer{
+    text-align: center;
+    justify-content: center;
+}
