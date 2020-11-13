@@ -96,9 +96,11 @@
 
     <script>
         function appendText() {
-
-    var thankyou = $('<div id="thankyoutextcontainer"><span id="thankyoutext">Thank you for your feedback!</span></div>');
-    $(".jumbotron").append(thankyou);
+            if(document.getElementById('thankyoutextcontainer') == null) {
+            var thankyou = $('<div id="thankyoutextcontainer"><span id="thankyoutext">Thank you for your feedback!</span></div>');
+            $(".jumbotron").append(thankyou);
+            }
+    
         }
     </script>
 
