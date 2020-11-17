@@ -1,0 +1,111 @@
+<head>
+    <meta charset="utf-8">
+    <title>Distanced</title>
+    <meta name="comp1800 boilerplate code" content="my bcit project">
+    <meta name="author" content="BCIT">
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- these two lines are for the Auth UI library and CSS -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+
+    <!-- head content for the map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of BCIT Burnaby Campus
+            const bcit_burnaby = {
+                lat: 49.2495,
+                lng: -123.0008
+            };
+            // The map, centered at BCIT Burnaby Campus
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: bcit_burnaby,
+            });
+            // The overlay for the route on the map.
+            const transitRoute = [
+            ]
+            // Settings for the polyline for the map.
+            const routePath = new google.maps.Polyline({
+                path: transitRoute,
+                geodesic: true,
+                strokeColor: "#FF0000",
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
+            });
+            routePath.setMap(map);
+        }
+    </script>
+
+    <style type="text/css">
+        #map-container {
+            height: 94vh;
+            width: 100%;
+        }
+
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 100%;
+            /* The height is full */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+            authDomain: "distanced-86fa9.firebaseapp.com",
+            databaseURL: "https://distanced-86fa9.firebaseio.com",
+            projectId: "distanced-86fa9",
+            storageBucket: "distanced-86fa9.appspot.com",
+            messagingSenderId: "167176184310",
+            appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+    </script>
+
+    <script src="result.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Distanced</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="trip.html">Plan Trip</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+</body>
