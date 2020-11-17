@@ -35,7 +35,7 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-    </script>
+    </script>                       
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
@@ -55,37 +55,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="login.html">my data</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">my profile</a>
-                </li> -->
-
+              
+                
             </ul>
         </div>
     </nav>
 
+   
 
-
-    <div class="jumbotron">
-        <h1 class="display-4">COVID-19 Warning</h1>
-        <p class="lead"></p>
-        <hr class="my-4">
-        <p class="covidwarning">Have you traveled outside Canada within the last 14 days?</p>
-        <p class="covidwarning">Or been in close contact with a confirmed or probably case of COVID-19?</p>
-        <p class="covidwarning"><b>OR</b></p>
-        <p class="covidwarning">Do you have a fever, or cough, runny nose, sore throat or shortness of breath?</p>
-        <p class="covidwarning"><b>If yes, STOP</b> </p>
-        <P class="covidwarning">Help prevent any potential spread of COVID-19</P>
-        <p class="covidwarning">and other illnesses</p>
-        <p class="covidwarning">Please do not visit today if you are unwell.</p>
-        <p class="covidwarning"> <a id=btnlocation class="btn btn-primary btn-lg" href="signIn.html" role="button">Sign
-                In/Login</a></p>
-
-
-        </p>
-    </div>
+<div class="jumbotron">
+    <h1 class="display-3">Crowdsourcing Ridership Information</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+   <p id="crowdsourcetext"> How many people are currently on your bus?</p>
+   <div class="crowdsourcebtncontainer">
+  <input class="crowdsourcebtn" id="crowdsourcebtn1" type="button" value="1-20 people" onclick='appendText()'></input>
+  <input class="crowdsourcebtn" id="crowdsourcebtn2" type="button" value="21-30 people" onclick='appendText()'></input>
+  <input class="crowdsourcebtn" id="crowdsourcebtn3" type="button" value="30+ people" onclick='appendText()'></input>
+</div>
+</div>
 
 
 
@@ -94,15 +82,9 @@
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-<<<<<<< HEAD
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-=======
-        </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
->>>>>>> 35fb413a7b27c69347f91a3e71ff9471214985e1
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
@@ -111,6 +93,16 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
+
+    <script>
+        function appendText() {
+            if(document.getElementById('thankyoutextcontainer') == null) {
+            var thankyou = $('<div id="thankyoutextcontainer"><span id="thankyoutext">Thank you for your feedback!</span></div>');
+            $(".jumbotron").append(thankyou);
+            }
+    
+        }
+    </script>
 
 </body>
 

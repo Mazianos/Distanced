@@ -410,6 +410,7 @@ h6, .h6 {
 }
 
 .display-3 {
+  text-align: center;
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
@@ -4937,6 +4938,7 @@ tbody.collapse.show {
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
+  
 }
 
 @media (min-width: 576px) {
@@ -7511,6 +7513,7 @@ button.bg-dark:focus {
 .mt-4,
 .my-4 {
   margin-top: 1.5rem !important;
+  font-size: 25pt;
 }
 
 .mr-4,

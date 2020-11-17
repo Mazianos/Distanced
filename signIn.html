@@ -10,30 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-
     <!-- these two lines are for the Auth UI library and CSS -->
-    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
     <script>
         // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
-          authDomain: "distanced-86fa9.firebaseapp.com",
-          databaseURL: "https://distanced-86fa9.firebaseio.com",
-          projectId: "distanced-86fa9",
-          storageBucket: "distanced-86fa9.appspot.com",
-          messagingSenderId: "167176184310",
-          appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
-        };
+        //var firebaseConfig = {
+          //apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
+          //authDomain: "distanced-86fa9.firebaseapp.com",
+          //databaseURL: "https://distanced-86fa9.firebaseio.com",
+          //projectId: "distanced-86fa9",
+          //storageBucket: "distanced-86fa9.appspot.com",
+          //messagingSenderId: "167176184310",
+          //appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
+        //};
         // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+        //firebase.initializeApp(firebaseConfig);
     </script>
 
 </head>
@@ -47,49 +39,6 @@
 
     <!--buttons to go back and forward-->
     <a href="index.html"><button type="button" class="btn btn-secondary" >back</button></a>
-     
-     <script>
-         var ui = new firebaseui.auth.AuthUI(firebase.auth());
- 
-         var uiConfig = {
-             callbacks: {
-               signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-                 // User successfully signed in.
-                 // Return type determines whether we continue the redirect automatically
-                 // or whether we leave that to developer to handle.
-                 return true;
-               },
-               uiShown: function() {
-                 // The widget is rendered.
-                 // Hide the loader.
-                 document.getElementById('loader').style.display = 'none';
-               }
-             },
-             // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-             signInFlow: 'popup',
-             signInSuccessUrl: 'main.html',
-             signInOptions: [
-               // Leave the lines as is for the providers you want to offer your users.
-               //firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-               //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-               //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-               //firebase.auth.GithubAuthProvider.PROVIDER_ID,
-               firebase.auth.EmailAuthProvider.PROVIDER_ID,
-               //firebase.auth.PhoneAuthProvider.PROVIDER_ID
-             ],
-             // Terms of service url.
-             tosUrl: '<your-tos-url>',
-             // Privacy policy url.
-             privacyPolicyUrl: '<your-privacy-policy-url>'
-           };
- 
-         // The start method will wait until the DOM is loaded.
-         ui.start('#firebaseui-auth-container', uiConfig);
-     </script>
- 
- 
- 
- 
      <!----------------------------------------------->
      <!-- JS: Boostrap, Firebase, API related    -->
      <!----------------------------------------------->
@@ -103,5 +52,16 @@
          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
      </script>
     
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+     <!-- Your own Firebase API key information -->
+     <script src="firebase_api.js"> </script>
+
+     <!-- Your own JavaScript functions included here    -->
+     <script src="login.js"></script>
 </body>
 </html>
