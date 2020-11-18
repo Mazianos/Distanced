@@ -21,11 +21,7 @@
     <!-- these two lines are for the Auth UI library and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -39,53 +35,29 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        var currentCampusList = document.getElementsById("current").getElementsByTagName("select");
-        var destinationList = document.getElementsById("destination").getElementsByTagName("select");
-       
     </script>
 
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
 </head>
 
 
 
 <body>
-<<<<<<< HEAD
-    <div id="logo">DISTANCED</div>
-    <form>
-        <div id="current">
-            <label for="origin">Select your current campus:</label>
-            <select id="origin" name="origin">
-                <option value="B">Burnaby</option>
-                <option value="D">Downtown</option>
-                <option value="R">Richmond</option>
-                <option value="M">Marine</option>
-                <option value="AI">Annacis Island</option>
-            </select>
-        </div>
-        <div id="destination">
-            <label for="destination">Select your destination campus:</label>
-            <select id="destination" name="destination">
-                <option value="B">Burnaby</option>
-                <option value="D">Downtown</option>
-                <option value="R">Richmond</option>
-                <option value="M">Marine</option>
-                <option value="AI">Annacis Island</option>
-            </select>
-            <button type="submit" formenctype="text/plain" formmethod="GET" formaction="result.html">Plan Route</button>
-=======
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html"><i>Distanced</i></a>
+        <a class="navbar-brand" href=""><i>Distanced</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-              
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="trip.html">Plan Trip</a>
+                </li>
             </ul>
         </div>
     </nav>
-   
+    <div class="forms">
         <div id="current">
             <label for="campus">Select your current campus:</label>
             <select id="campus1" name="campus">
@@ -105,19 +77,22 @@
                 <option value="Marine" id="marine">Marine</option>
                 <option value="Annacis Island" id="annacis">Annacis Island</option>
             </select>
->>>>>>> 98169654b2cdcbddf76fb22a1c0b81c0203a26ce
         </div>
-    </form>
+        <div id="time">
+            <label for="campus">Enter your departure time:</label>
+            <input type="time">
+        </div>
+    </div>
 
-<<<<<<< HEAD
-    <!--buttons to go back and forward-->
-    <a href="main.html"><button type="button" class="btn btn-secondary">Back</button></a>
-=======
-        <!--buttons to go back and forward-->
-        <a href="main.html"><button type="button" class="btn btn-secondary" >Back</button></a>
-        <a href="main.html"><button type="button" class="btn btn-secondary">Next Page</button></a>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
->>>>>>> 98169654b2cdcbddf76fb22a1c0b81c0203a26ce
+    <div class="btnSets">
+         <!--buttons to go back and forward-->
+        <a href="main.html"><button type="button" class="btn btn-secondary btn1" >Back</button></a>
+        <a href="main.html"><button type="button" class="btn btn-secondary btn2">Next Page</button></a>
+        
+    </div>
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    </form>
 </body>
 
 </html>
