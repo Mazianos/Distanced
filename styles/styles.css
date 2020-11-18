@@ -49,8 +49,21 @@ align-items: center;
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .footercolor{
     background-color: #00487C;
     padding: 0px;
     margin: 0px;
+=======
+.welcome{
+    text-align: center;
+    padding-top: 1rem;
+    background-color: #0496FF;
+    color: white;
+    margin-bottom: 2rem;
+}
+.backbtn {
+    margin-top: 5rem;
+    margin-left: 20%;
+>>>>>>> b171e1e5f104eb2a0f7605472162ab6c2e587f08
 }
