@@ -34,15 +34,10 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        var currentCampusList = document.getElementsById("current").getElementsByTagName("select");
-        var destinationList = document.getElementsById("destination").getElementsByTagName("select");
-        $(document).ready(function(){
-            $("currentCampusList #burnaby").click(funtion(){
-                $("#campus2 option[value = 'Burnaby']").prop("disabled", true),;
-            });
-        });
     </script>
 
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
 </head>
 
 
@@ -69,6 +64,11 @@
                 <option value="Annacis Island" id="annacis">Annacis Island</option>
             </select>
         </div>
+        <div id="destination">
+            <label for="campus">Enter your departure time:</label>
+            <input type="time">
+        </div>
+        
 
         <!--buttons to go back and forward-->
         <a href="main.html"><button type="button" class="btn btn-secondary" >Back</button></a>
