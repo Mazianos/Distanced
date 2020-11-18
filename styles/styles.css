@@ -49,33 +49,9 @@ align-items: center;
     justify-content: center;
 }
 
-.welcome{
-    text-align: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    background-color: #0496FF;
-    color: white;
-    margin-bottom: 2rem;
-}
-.backbtn {
-    margin-top: 5rem;
-    margin-left: 20%;
+.footercolor{
+    background-color: #00487C;
+    padding: 1rem;
+    margin: 0px;
 }
 
-.forms {
-    margin-top: 1rem;
-    text-align: center;
-}
-.forms div {
-    padding-bottom: 3rem;
-    font-size: 16pt;
-}
-.btnSets {
-    text-align: center;
-}
-.btnSets .btn1 {
-    margin-right: 6rem;
-}
-.btnSets .btn2 {
-    margin-left: 6rem;
-}
