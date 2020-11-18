@@ -51,6 +51,7 @@ align-items: center;
 
 .welcome{
     text-align: center;
+    margin-top: 1rem;
     padding-top: 1rem;
     background-color: #0496FF;
     color: white;
@@ -59,4 +60,22 @@ align-items: center;
 .backbtn {
     margin-top: 5rem;
     margin-left: 20%;
+}
+
+.forms {
+    margin-top: 1rem;
+    text-align: center;
+}
+.forms div {
+    padding-bottom: 3rem;
+    font-size: 16pt;
+}
+.btnSets {
+    text-align: center;
+}
+.btnSets .btn1 {
+    margin-right: 6rem;
+}
+.btnSets .btn2 {
+    margin-left: 6rem;
 }
