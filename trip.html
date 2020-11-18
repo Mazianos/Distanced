@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Distanced</title>
@@ -42,30 +43,32 @@
 
 <body>
     <div id="logo">DISTANCED</div>
+    <form>
         <div id="current">
-            <label for="campus">Select your current campus:</label>
-            <select id="campus" name="campus">
-                <option value="Burnaby">Burnaby</option>
-                <option value="Downtown">Downtown</option>
-                <option value="Richmond">Richmond</option>
-                <option value="Marine">Marine</option>
-                <option value="Annacis Island">Annacis Island</option>
+            <label for="origin">Select your current campus:</label>
+            <select id="origin" name="origin">
+                <option value="B">Burnaby</option>
+                <option value="D">Downtown</option>
+                <option value="R">Richmond</option>
+                <option value="M">Marine</option>
+                <option value="AI">Annacis Island</option>
             </select>
         </div>
         <div id="destination">
-            <label for="campus">Select your destination campus:</label>
-            <select id="campus" name="campus">
-                <option value="Burnaby">Burnaby</option>
-                <option value="Downtown">Downtown</option>
-                <option value="Richmond">Richmond</option>
-                <option value="Marine">Marine</option>
-                <option value="Annacis Island">Annacis Island</option>
+            <label for="destination">Select your destination campus:</label>
+            <select id="destination" name="destination">
+                <option value="B">Burnaby</option>
+                <option value="D">Downtown</option>
+                <option value="R">Richmond</option>
+                <option value="M">Marine</option>
+                <option value="AI">Annacis Island</option>
             </select>
-            <input type="submit">
+            <button type="submit" formenctype="text/plain" formmethod="GET" formaction="result.html">Plan Route</button>
         </div>
+    </form>
 
-        <!--buttons to go back and forward-->
-        <a href="main.html"><button type="button" class="btn btn-secondary" >Back</button></a>
-        <a href="main.html"><button type="button" class="btn btn-secondary">Next Page</button></a>
+    <!--buttons to go back and forward-->
+    <a href="main.html"><button type="button" class="btn btn-secondary">Back</button></a>
 </body>
+
 </html>
