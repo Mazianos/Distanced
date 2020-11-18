@@ -20,7 +20,7 @@
     <!-- these two lines are for the Auth UI library and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -34,6 +34,13 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        var currentCampusList = document.getElementsById("current").getElementsByTagName("select");
+        var destinationList = document.getElementsById("destination").getElementsByTagName("select");
+        $(document).ready(function(){
+            $("currentCampusList #burnaby").click(funtion(){
+                $("#campus2 option[value = 'Burnaby']").prop("disabled", true),;
+            });
+        });
     </script>
 
 </head>
@@ -44,28 +51,28 @@
     <div id="logo">DISTANCED</div>
         <div id="current">
             <label for="campus">Select your current campus:</label>
-            <select id="campus" name="campus">
-                <option value="Burnaby">Burnaby</option>
-                <option value="Downtown">Downtown</option>
-                <option value="Richmond">Richmond</option>
-                <option value="Marine">Marine</option>
-                <option value="Annacis Island">Annacis Island</option>
+            <select id="campus1" name="campus">
+                <option value="Burnaby" id="burnaby">Burnaby</option>
+                <option value="Downtown" id="downtown">Downtown</option>
+                <option value="Richmond" id="richmond">Richmond</option>
+                <option value="Marine" id="marine">Marine</option>
+                <option value="Annacis Island" id="annacis">Annacis Island</option>
             </select>
         </div>
         <div id="destination">
             <label for="campus">Select your destination campus:</label>
-            <select id="campus" name="campus">
-                <option value="Burnaby">Burnaby</option>
-                <option value="Downtown">Downtown</option>
-                <option value="Richmond">Richmond</option>
-                <option value="Marine">Marine</option>
-                <option value="Annacis Island">Annacis Island</option>
+            <select id="campus2" name="campus">
+                <option value="Burnaby" id="burnaby">Burnaby</option>
+                <option value="Downtown" id="downtown">Downtown</option>
+                <option value="Richmond" id="richmond">Richmond</option>
+                <option value="Marine" id="marine">Marine</option>
+                <option value="Annacis Island" id="annacis">Annacis Island</option>
             </select>
-            <input type="submit">
         </div>
 
         <!--buttons to go back and forward-->
         <a href="main.html"><button type="button" class="btn btn-secondary" >Back</button></a>
         <a href="main.html"><button type="button" class="btn btn-secondary">Next Page</button></a>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>

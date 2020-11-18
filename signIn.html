@@ -13,32 +13,22 @@
     <!-- these two lines are for the Auth UI library and CSS -->
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
-    <script>
-        // Your web app's Firebase configuration
-        //var firebaseConfig = {
-          //apiKey: "AIzaSyDg-z0xrwHj90EIzn2EmSKyGyC4gh4dzdc",
-          //authDomain: "distanced-86fa9.firebaseapp.com",
-          //databaseURL: "https://distanced-86fa9.firebaseio.com",
-          //projectId: "distanced-86fa9",
-          //storageBucket: "distanced-86fa9.appspot.com",
-          //messagingSenderId: "167176184310",
-          //appId: "1:167176184310:web:3ab296203c5e2c9f1467d7"
-        //};
-        // Initialize Firebase
-        //firebase.initializeApp(firebaseConfig);
-    </script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
 
 </head>
 <body>
     <!-- where the login component is going to sit -->
     <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
-     <h1>Welcome to Distanced. Please sign in below.</h1>
+     <h1 class="welcome">Welcome to Distanced <br>Please sign in below</h1>
      <div id="firebaseui-auth-container"></div>
      <div id="loader">Loading...</div>
 
     <!--buttons to go back and forward-->
-    <a href="index.html"><button type="button" class="btn btn-secondary" >back</button></a>
+    <div class="backbtn">
+        <a href="index.html"><button type="button" class="btn btn-primary btn-sm">back</button></a>    
+    </div>
      <!----------------------------------------------->
      <!-- JS: Boostrap, Firebase, API related    -->
      <!----------------------------------------------->

@@ -48,3 +48,15 @@ align-items: center;
     text-align: center;
     justify-content: center;
 }
+
+.welcome{
+    text-align: center;
+    padding-top: 1rem;
+    background-color: #0496FF;
+    color: white;
+    margin-bottom: 2rem;
+}
+.backbtn {
+    margin-top: 5rem;
+    margin-left: 20%;
+}
