@@ -55,5 +55,19 @@ align-items: center;
     margin: 0px;
 }
 
+form {
+    text-align: center;
+    font-size:  16pt;
+    margin-top: 6rem;
+}
+form div {
+    margin-top: 2rem;
+}
+.btnSets .btn1{
+    margin-right: 5rem;
+}
+.btnSets .btn2{
+    margin-left: 5rem;
+}
 
 
