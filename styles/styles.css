@@ -48,3 +48,10 @@ align-items: center;
     text-align: center;
     justify-content: center;
 }
+
+.footercolor{
+    background-color: #00487C;
+    padding: 1rem;
+    margin: 0px;
+}
+
