@@ -1,3 +1,14 @@
+body, html{
+   height: 100vh;
+   background: #3E6680; 
+
+    
+}
+
+.tripbody{
+    background-color: ;
+}
+
 .display-4{
     font-size: 32pt;
     text-align: center;
@@ -10,6 +21,7 @@
 }
 
 #btnlocation{
+  
    justify-content: center;
    align-items: center;
 }
@@ -55,13 +67,20 @@ align-items: center;
     margin: 0px;
 }
 
+.tripfooter{
+    margin-top: 0rem;
+}
 form {
+    justify-content: center;
     text-align: center;
     font-size:  16pt;
-    margin-top: 6rem;
+    background-color: white;
+    padding-top: 10rem;
+   
 }
 form div {
-    margin-top: 2rem;
+    background-color: white;
+   
 }
 .btnSets .btn1{
     margin-right: 5rem;
@@ -72,4 +91,8 @@ form div {
     margin-bottom: 1rem;
 }
 
-
+#firebaseui-auth-container{
+   
+    background-color: #3E6680 ;
+    height: 90%;
+}
