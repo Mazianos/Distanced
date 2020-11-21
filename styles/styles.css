@@ -14,6 +14,7 @@ body, html{
 .covidwarning{
     font-size: 24pt;
     text-align: center;
+    font: 1vw;
     
 }
 
@@ -45,7 +46,7 @@ body, html{
 .crowdsourcebtncontainer{
 display:flex;
 justify-content: center;
-align-items: center;    
+
 }
 
 #thankyoutext{
@@ -58,14 +59,31 @@ align-items: center;
     justify-content: center;
 }
 
+.covidwarning{
+ 
+}
+
+#covidwarningheader{
+    font: 3vw;
+}
+
 .footercolor{
     background-color: #00487C;
     padding: 1rem;
     margin: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .tripfooter{
     margin-top: 0rem;
+}
+.feedbackfooter{
+    position: fixed;
+    margin-top: 30rem;
 }
 form {
     justify-content: center;
@@ -78,6 +96,10 @@ form {
 form div {
     background-color: white;
    
+}
+
+.timetableform{
+    height: 90%;
 }
 .btnSets .btn1{
     margin-right: 5rem;
