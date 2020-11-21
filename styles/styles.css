@@ -59,9 +59,7 @@ justify-content: center;
     justify-content: center;
 }
 
-.covidwarning{
- 
-}
+
 
 #covidwarningheader{
     font: 3vw;
@@ -71,17 +69,9 @@ justify-content: center;
     background-color: #00487C;
     padding: 1rem;
     margin: 0px;
-<<<<<<< HEAD
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-=======
     position: absolute;
     bottom: 0;
     width: 100%;
->>>>>>> c11c13c645c5e67c73ae40bef2bdba31da7da021
 }
 
 .tripfooter{
@@ -117,7 +107,7 @@ form div {
 }
 
 #firebaseui-auth-container{
-    margin-top: 4rem;
+    margin-top: 15rem;
     background-color: #3E6680 ;
     height: 90%;
 }
