@@ -62,6 +62,9 @@ align-items: center;
     background-color: #00487C;
     padding: 1rem;
     margin: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .tripfooter{
@@ -89,7 +92,14 @@ form div {
 }
 
 #firebaseui-auth-container{
-   
+    margin-top: 4rem;
     background-color: #3E6680 ;
     height: 90%;
+}
+#infoContainer {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 25pt;
 }
