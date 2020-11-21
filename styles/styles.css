@@ -1,8 +1,6 @@
 body, html{
    height: 100vh;
    background: #3E6680; 
-
-    
 }
 
 
@@ -35,7 +33,7 @@ body, html{
     padding: 1rem;
     background-color: #3E6680;
     color: white;
-    font-size: 1.75em
+    font-size: 1.1rem
 }
 
 .crowdsourcebtn:hover{
@@ -44,9 +42,15 @@ body, html{
 }
 
 .crowdsourcebtncontainer{
+<<<<<<< HEAD
 display:flex;
 justify-content: center;
 
+=======
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+>>>>>>> 1ca1d002af5790cb0c15369acaa15b3e838301c5
 }
 
 #thankyoutext{
@@ -112,9 +116,32 @@ form div {
     height: 90%;
 }
 #infoContainer {
-    background-color: white;
     width: 80%;
     margin: 0 auto;
     margin-top: 3rem;
     font-size: 25pt;
+}
+/* media query for mobile size*/
+@media screen and (min-width: 0px) {
+    #infoContainer {
+        background-color:white;
+        text-align: center;
+    }
+    .crowdsourcebtncontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* media query for desktop size*/
+@media screen and (min-width: 600px) {
+    #infoContainer {
+        background-color:white;
+    }
+    .crowdsourcebtncontainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;    
+    }
 }
