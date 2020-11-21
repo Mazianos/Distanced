@@ -12,6 +12,7 @@ body, html{
 .covidwarning{
     font-size: 24pt;
     text-align: center;
+    font: 1vw;
     
 }
 
@@ -56,6 +57,12 @@ body, html{
     justify-content: center;
 }
 
+
+
+#covidwarningheader{
+    font: 3vw;
+}
+
 .footercolor{
     background-color: #00487C;
     padding: 1rem;
@@ -76,6 +83,10 @@ body, html{
 .tripfooter{
     margin-top: 0rem;
 }
+.feedbackfooter{
+    position: fixed;
+    margin-top: 30rem;
+}
 form {
     justify-content: center;
     text-align: center;
@@ -88,6 +99,10 @@ form div {
     background-color: white;
    
 }
+
+.timetableform{
+    height: 90%;
+}
 .btnSets .btn1{
     margin-right: 5rem;
     margin-bottom: 1rem;
@@ -98,7 +113,7 @@ form div {
 }
 
 #firebaseui-auth-container{
-    margin-top: 4rem;
+    margin-top: 15rem;
     background-color: #3E6680 ;
     height: 90%;
 }
