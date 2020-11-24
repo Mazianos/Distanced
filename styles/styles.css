@@ -113,9 +113,9 @@ form div {
 }
 
 #firebaseui-auth-container{
-    margin-top: 15rem;
+    margin-top: 3.5rem;
     background-color: #3E6680 ;
-    height: 90%;
+    height: 75%;
 }
 #infoContainer {
     width: 80%;

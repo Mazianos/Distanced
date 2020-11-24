@@ -230,3 +230,14 @@ var nanaimo_22nd = ( {
     lat: 49.248268, lng: -123.055920
 }
 )
+
+function sendPlaceToResult() {
+    const button1 = document.getElementById('btn1');
+    const des = document.getElementById('destinationList');
+    const origin = document.getElementById('originList');
+
+    button1.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('receive').innerHTML = des.val();
+    })
+}

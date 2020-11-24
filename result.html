@@ -22,7 +22,7 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
-    
+    <script src="result.js"></script>
     <!-- head content for the map -->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
@@ -53,7 +53,9 @@
                 strokeWeight: 2,
             });
             routePath.setMap(map);
+            
         }
+        
     </script>
 
     <style type="text/css">
@@ -111,10 +113,9 @@
                     <a class="nav-link" href="login.html"></a>
                 </li>
             </ul>
-            </ul>
         </div>
     </nav>
-
+    <div id="receive"></div>
     <div id="map-container">
         <div id="map"></div>
     </div>
