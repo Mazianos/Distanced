@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Distanced</title>
+    <title>Distanced - Trip Planner</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -44,19 +44,25 @@
 
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html"><i>Distanced</i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto">
-          
-            
-        </ul>
-    </div>
-</nav>
-    <form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html"><i>Distanced</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="trip.html">Plan Trip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Crowdsource Feedback</a>
+                </li>
+
+            </ul>
+            </ul>
+        </div>
+    </nav>
+    <form class="timetableform">
         <div id="current">
             <label for="origin">Select your current campus:</label>
             <select id="origin" name="origin">
@@ -79,18 +85,24 @@
         </div>
         <div id="time">
             <label for="campus">Enter your departure time:</label>
-            <input type="time">
+            <input type="time" value="00:00">
         </div>
-    </div>
+        </div>
 
-    <div class="btnSets">
-         <!--buttons to go back and forward-->
-        <a href="main.html"><button type="button" class="btn btn-secondary btn1" >Back</button></a>
-        <button type="submit" formenctype="text/plain" formmethod="GET" formaction="result.html" class="btn btn-secondary btn2">Plan Route</button>
-        
-    </div>
-       <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <div class="btnSets">
+            <!--buttons to go back and forward-->
+            <a href="main.html"><button type="button" class="btn btn-primary btn1">Back</button></a>
+            <button type="submit" formenctype="text/plain" formmethod="GET" formaction="result.html"
+                class="btn btn-primary btn2">Plan Route</button>
+
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     </form>
+    <footer class="tripfooter">
+
+        </div>
+    </footer>
 </body>
 
 </html>
