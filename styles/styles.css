@@ -71,6 +71,14 @@ body, html{
     bottom: 0;
     width: 100%;
 }
+#sticky {
+    background-color: #00487C;
+    padding: 1rem;
+    margin: 0px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
 
 .tripfooter{
     margin-top: 0rem;
