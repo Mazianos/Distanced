@@ -231,13 +231,15 @@ var nanaimo_22nd = ( {
 }
 )
 
-function sendPlaceToResult() {
-    const button1 = document.getElementById('btn1');
-    const des = document.getElementById('destinationList');
-    const origin = document.getElementById('originList');
-
-    button1.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.getElementById('receive').innerHTML = des.val();
-    })
+document.getElementById('btn1').onclick = function() {
+    var val1 = $('[name=origin]').val();
+    var val2 = $('[name=destination]').val();
+    var val3 = $('[name=time]').val();
+    function save() {
+        localStorage.setItem('current', val1);
+        localStorage.setItem('destination', val2);
+        localStorage.setItem('time', val3);
+      }
+    save()
+    console.log(localStorage);
 }
