@@ -35,14 +35,14 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-    </script>                       
+    </script>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
 
 </head>
 
-<body>
+<body class="feedbackbody">
 
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
@@ -61,23 +61,31 @@
                 <li class="nav-item">
                     <a class="nav-link" href="main.html">Map</a>
                 </li>
-               
+
             </ul>
             </ul>
         </div>
     </nav>
 
-   <div id="infoContainer">
-       <h1>Crowdsourcing Ridership Information</h1>
-       <p>How many people are currently on your bus?</p>
-       <div class="crowdsourcebtncontainer">
-        <input class="crowdsourcebtn" id="crowdsourcebtn1" type="button" value=" 1-20 people" onclick='appendText()'></input>
-        <input class="crowdsourcebtn" id="crowdsourcebtn2" type="button" value="21-30 people" onclick='appendText()'></input>
-        <input class="crowdsourcebtn" id="crowdsourcebtn3" type="button" value=" 30+ people " onclick='appendText()'></input>
-       </div>
+    <div id="infoContainer">
+        <h1 class="currentbus">Crowdsourcing Ridership Information</h1>
+        <p class="currentbus">How many people are currently on your bus?</p>
+    </div>
+    <div class="crowdsourcebtncontainer">
 
-   </div>
-<!--
+        <input class="btn btn-lg crowdsourcebtn" id="crowdsourcebtn1" type="button" value=" 1-20 people"
+            onclick='appendText()'></input>
+        <input class="btn btn-lg crowdsourcebtn" id="crowdsourcebtn2" type="button" value="21-30 people"
+            onclick='appendText()'></input>
+        <input class="btn btn-lg crowdsourcebtn" id="crowdsourcebtn3" type="button" value=" 30+ people "
+            onclick='appendText()'></input>
+    </div>
+    <footer class="navbar fixed-bottom footercolor justify-content-around">
+
+
+    </footer>
+
+    <!--
     <div class="jumbotron">
         <h1 class="display-3">Crowdsourcing Ridership Information</h1>
         <p class="lead"></p>
@@ -92,17 +100,7 @@
 -->
 
 
-<footer class="footercolor">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-              
-                
-            </ul>
-        </div>
-</footer>
+   
 
 
     <!----------------------------------------------->
@@ -124,11 +122,13 @@
 
     <script>
         function appendText() {
-            if(document.getElementById('thankyoutextcontainer') == null) {
-            var thankyou = $('<div id="thankyoutextcontainer"><span id="thankyoutext">Thank you for your feedback!</span></div>');
-            $("#infoContainer").append(thankyou);
+            if (document.getElementById('thankyoutextcontainer') == null) {
+                var thankyou = $(
+                    '<div id="thankyoutextcontainer"><span id="thankyoutext">Thank you for your feedback!</span></div>'
+                    );
+                $("#infoContainer").append(thankyou);
             }
-    
+
         }
     </script>
 

@@ -1,76 +1,112 @@
-body, html{
-   height: 100vh;
-   background: #3E6680; 
+body,
+html {
+    height: 95vh;
+
 }
 
 
-.display-4{
+
+.indexbody, .feedbackbody{
+    background-color: #3E6680;
+}
+
+.display-4 {
     font-size: 32pt;
     text-align: center;
     font-weight: bold;
 }
-.covidwarning{
-    font-size: 24pt;
-    text-align: center;
-    font: 1vw;
+
+.warningcontainer {
     
+    padding: 3rem;
+    height: 90vh;
 }
 
-#btnlocation{
-  
-   justify-content: center;
-   align-items: center;
+.warningcontainercontainer {
+    color: #3E6680;
 }
 
-#crowdsourcetext{
+.covidwarning {
+    background-color: white;
+    color: black;
+    font-size: 24pt;
+    text-align: center;
+    font: 0.5vw;
+    margin: 0rem;
+
+}
+
+#btnlocation {
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#crowdsourcetext {
     font-size: 24pt;
     text-align: center;
 }
 
-.crowdsourcebtn{
+.covidwarningcontainer {
+    
+    background-color: white;
+}
+
+.crowdsourcebtn {
     border-radius: 10pt;
     margin: 1rem;
     padding: 1rem;
-    background-color: #3E6680;
+    background-color: #007bff;
     color: white;
     font-size: 1.1rem
 }
 
-.crowdsourcebtn:hover{
-    background-color: #00487c;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.crowdsourcebtn:hover {
+    /* background-color: #00487C; */
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.crowdsourcebtncontainer{
-    display:flex;
+.crowdsourcebtncontainer {
+    widows: 80%;
+    background-color: white;
+    display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding-top: 5rem;
+    margin-top: 0rem;
 }
 
-#thankyoutext{
+.currentbus{
+    background-color: white;
+    margin-bottom: 0rem;
+    padding: 0rem;
+}
+#thankyoutext {
     font-size: 40px;
-    
+
 }
 
-#thankyoutextcontainer{
+#thankyoutextcontainer {
     text-align: center;
     justify-content: center;
 }
 
 
 
-#covidwarningheader{
+#covidwarningheader {
     font: 3vw;
 }
 
-.footercolor{
+.footercolor {
     background-color: #00487C;
     padding: 1rem;
     margin: 0px;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
+
 }
+
 #sticky {
     background-color: #00487C;
     padding: 1rem;
@@ -80,55 +116,90 @@ body, html{
     width: 100%;
 }
 
-.tripfooter{
-    margin-top: 0rem;
+.tripfooter {
+    color: #00487c;
+    margin-top: 0;
 }
-.feedbackfooter{
+
+
+
+.feedbackfooter {
     position: fixed;
     margin-top: 30rem;
 }
+
+.formcontainer {
+    background-color: white;
+}
+
 form {
     justify-content: center;
     text-align: center;
-    font-size:  16pt;
+    font-size: 16pt;
     background-color: white;
-    padding-top: 10rem;
-   
-}
-form div {
-    background-color: white;
-   
+    padding-top: 5rem;
+    margin-top: 10rem;
+
 }
 
-.timetableform{
-    height: 90%;
+label{
+    color: black;
 }
-.btnSets .btn1{
+
+.timetableform {
+    height: 101%;
+    background-color:  #3E6680;
+    margin: 0;
+}
+.btnSets, #time, .destination, #current {
+    
+   
+    background-color: white;
+}
+
+#current{
+    padding-top: 3rem;
+}
+.btnSets .btn1 {
+    
+    margin-top: 2rem;
     margin-right: 5rem;
     margin-bottom: 1rem;
 }
-.btnSets .btn2{
+
+.btnSets .btn2 {
+    margin-top: 2rem;
     margin-left: 5rem;
     margin-bottom: 1rem;
 }
 
-#firebaseui-auth-container{
-    margin-top: 15rem;
-    background-color: #3E6680 ;
-    height: 90%;
+#firebaseui-auth-container {
+    margin-bottom: 10rem;
+    padding: 5rem;
+    padding-top: 5rem;
+
+    background-color: #3E6680;
+    height: 105%;
+
 }
+
 #infoContainer {
-    width: 80%;
+    text-align: center;
+    width: 100%;
     margin: 0 auto;
     margin-top: 3rem;
-    font-size: 25pt;
+    font-size: 24pt;
+    padding: 0rem;
+    margin-bottom: 0rem;
 }
+
 /* media query for mobile size*/
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 600px) {
     #infoContainer {
-        background-color:white;
+        background-color: white;
         text-align: center;
     }
+
     .crowdsourcebtncontainer {
         display: flex;
         flex-direction: column;
@@ -137,13 +208,14 @@ form div {
 }
 
 /* media query for desktop size*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
     #infoContainer {
-        background-color:white;
+        background-color: white;
     }
-    .crowdsourcebtncontainer{
-        display:flex;
+
+    .crowdsourcebtncontainer {
+        display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
     }
 }
