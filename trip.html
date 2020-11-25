@@ -61,9 +61,10 @@
                 </li>
 
             </ul>
-            </ul>
+
         </div>
     </nav>
+    
     <form class="timetableform">
         <div id="current">
             <label for="origin">Select your current campus:</label>
@@ -75,7 +76,7 @@
                 <option value="AI" data-id='AI'>Annacis Island</option>
             </select>
         </div>
-        <div id="destination">
+        <div class="destination">
             <label for="destination">Select your destination campus:</label>
             <select id="destinationList" name="destination">
                 <option value="B">Burnaby</option>
@@ -89,21 +90,18 @@
             <label for="campus">Enter your departure time:</label>
             <input type="time" value="00:00" name="time">
         </div>
-        </div>
+        
 
         <div class="btnSets">
             <!--buttons to go back and forward-->
             <a href="main.html"><button type="button" class="btn btn-primary btn1">Back</button></a>
             <input type="button" value="Set Route and Time" formmethod="GET" formaction="result.html"
-        class="btn btn-primary btn2 btn1" id="btn1">
-        <a href="result.html"><button type="button" class="btn btn-primary btn1" id="nextBtn">Next</button></a>
+        class="btn btn-primary btn1" id="btn1">
+            <a href="result.html"><button type="button" class="btn btn-primary btn1" id="nextBtn">Next</button></a>
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    </form> 
-    <footer class="tripfooter">
+    </form>
 
-        </div>
-    </footer>
     <script src="result.js"></script>
 </body>
 
