@@ -160,11 +160,18 @@ label{
 #current{
     padding-top: 3rem;
 }
+<<<<<<< HEAD
 .btnSets .btn1 {
     
     margin-top: 2rem;
     margin-right: 5rem;
     margin-bottom: 1rem;
+=======
+.btnSets .btn1{
+    margin-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+>>>>>>> 03733cdd93009da9bf5406ef97b6a2e3c408d364
 }
 
 .btnSets .btn2 {
@@ -188,7 +195,24 @@ label{
     padding: 0rem;
     margin-bottom: 0rem;
 }
+<<<<<<< HEAD
 
+=======
+#btn1 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#nextBtn {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+>>>>>>> 03733cdd93009da9bf5406ef97b6a2e3c408d364
 /* media query for mobile size*/
 @media screen and (max-width: 600px) {
     #infoContainer {
@@ -213,5 +237,25 @@ label{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .btnSets .btn1{
+        margin-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 20rem;
+    }
+    #btn1 {
+        position: absolute;
+        top: 48.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #nextBtn {
+        position: absolute;
+        top: 48.5%;
+        left: 80;
+        margin-left: 25vw;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
