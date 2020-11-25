@@ -35,10 +35,12 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        
     </script>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
+    <script src="result.js"></script>
 </head>
 
 
@@ -66,7 +68,7 @@
     <form class="timetableform">
         <div id="current">
             <label for="origin">Select your current campus:</label>
-            <select id="origin" name="origin">
+            <select id="originList" name="origin">
                 <option value="B">Burnaby</option>
                 <option value="D">Downtown</option>
                 <option value="R">Richmond</option>
@@ -76,7 +78,7 @@
         </div>
         <div class="destination">
             <label for="destination">Select your destination campus:</label>
-            <select id="destination" name="destination">
+            <select id="destinationList" name="destination">
                 <option value="B">Burnaby</option>
                 <option value="D">Downtown</option>
                 <option value="R">Richmond</option>
@@ -86,7 +88,7 @@
         </div>
         <div id="time">
             <label for="campus">Enter your departure time:</label>
-            <input type="time" value="00:00">
+            <input type="time" value="00:00" name="time">
         </div>
         
 
@@ -94,7 +96,7 @@
             <!--buttons to go back and forward-->
             <a href="main.html"><button type="button" class="btn btn-lg btn-primary btn1">Back</button></a>
             <button type="submit" formenctype="text/plain" formmethod="GET" formaction="result.html"
-                class="btn btn-lg btn-primary btn2">Plan Route</button>
+                class="btn btn-primary btn2" id="btn1" onclick="sendPlaceToResult()">Plan Route</button>
 
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

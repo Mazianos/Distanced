@@ -173,14 +173,10 @@ label{
     margin-bottom: 1rem;
 }
 
-#firebaseui-auth-container {
-    margin-bottom: 10rem;
-    padding: 5rem;
-    padding-top: 5rem;
-
-    background-color: #3E6680;
-    height: 105%;
-
+#firebaseui-auth-container{
+    margin-top: 3.5rem;
+    background-color: #3E6680 ;
+    height: 75%;
 }
 
 #infoContainer {
