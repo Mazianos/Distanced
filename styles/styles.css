@@ -190,6 +190,15 @@ label{
     margin-bottom: 0rem;
 }
 
+<<<<<<< HEAD
+=======
+.arrived {
+    color: white;
+    border-radius: 5%;
+    border: white 2px solid;
+
+}
+>>>>>>> 3dcda57e313d672446027fafcf97847c6f1ac6c1
 /* media query for mobile size*/
 @media screen and (max-width: 600px) {
     #infoContainer {
