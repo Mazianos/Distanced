@@ -89,9 +89,104 @@ const expoBDF = [{
     lng: -123.1160100060759
 }]
 
-document.getElementById("fastest-route").onclick = function () {
-    fastest()
-};
+const oneThirty = [{
+    lat: 49.24798571661244,
+    lng: -123.00439946999376
+}, {
+    lat: 49.24671328913124,
+    lng: -123.00347815680945
+}, {
+    lat: 49.23158279882996,
+    lng: -123.00342422034215
+}, {
+    lat: 49.22768977676348,
+    lng: -123.00763260565586
+}, {
+    lat: 49.226036680974765,
+    lng: -123.00414537448015
+}]
+
+const expoBDA = [{
+    lat: 49.22587768157755,
+    lng: -123.00397709946816
+}, {
+    lat: 49.233114734798754,
+    lng: -123.0199748612935
+}, {
+    lat: 49.28335755887346,
+    lng: -123.1160100060759
+}]
+
+const seven = [{
+    lat: 49.248410307837375,
+    lng: -123.05551635113628
+}, {
+    lat: 49.24881122997817,
+    lng: -123.05540796674029
+}, {
+    lat: 49.24880729938478,
+    lng: -123.05656707767488
+}, {
+    lat: 49.2847837610203,
+    lng: -123.05659627870952
+}, {
+    lat: 49.284810183517415,
+    lng: -123.06550775075041
+}, {
+    lat: 49.28324554692222,
+    lng: -123.07407644987993
+}, {
+    lat: 49.2825154353683,
+    lng: -123.08210198487359
+}, {
+    lat: 49.28295142479204,
+    lng: -123.08567670054812
+}, {
+    lat: 49.283202447264664,
+    lng: -123.09957049562294
+}, {
+    lat: 49.28040149254489,
+    lng: -123.09969201579983
+}, {
+    lat: 49.28050058563368,
+    lng: -123.10435028530631
+}, {
+    lat: 49.281564172295575,
+    lng: -123.10999084208534
+}, {
+    lat: 49.2846292875568,
+    lng: -123.11487189844938
+}, {
+    lat: 49.28342342303933,
+    lng: -123.11659868293755
+}]
+
+// Settings for the polyline for the map.
+const sevenPath = new google.maps.Polyline({
+    path: seven,
+    geodesic: true,
+    strokeColor: "#AC00E6",
+    strokeOpacity: 0.5,
+    strokeWeight: 4,
+});
+
+// Settings for the polyline for the map.
+const oneThirtyPath = new google.maps.Polyline({
+    path: oneThirty,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.5,
+    strokeWeight: 4,
+});
+
+// Settings for the polyline for the map.
+const expoBDAPath = new google.maps.Polyline({
+    path: expoBDA,
+    geodesic: true,
+    strokeColor: "#CA573E",
+    strokeOpacity: 0.5,
+    strokeWeight: 4,
+});
 
 // Settings for the polyline for the map.
 const twentyfivePath = new google.maps.Polyline({
@@ -111,10 +206,34 @@ const expoBDFPath = new google.maps.Polyline({
     strokeWeight: 4,
 });
 
-function fastest() {
-    routePath.setMap(map);
-    routePathTwo.setMap(map);
+function BDf1230() {
+    twentyfivePath.setMap(map);
+    expoBDFPath.setMap(map);
 }
+
+function BDa1230() {
+    oneThirtyPath.setMap(map);
+    expoBDAPath.setMap(map);
+    expoBDFPath.setMap(map);
+}
+
+function BDs1230() {
+    twentyfivePath.setMap(map);
+    sevenPath.setMap(map);
+}
+
+document.getElementById("fastest-route").onclick = function () {
+    BDf1230()
+};
+
+document.getElementById("average-route").onclick = function () {
+    BDa1230()
+};
+
+document.getElementById("slowest-route").onclick = function () {
+    BDs1230()
+};
+
 document.getElementById('btn1').onclick = function() {	
     var val1 = $('[name=origin]').val();	   
     var val2 = $('[name=destination]').val();	  
@@ -126,5 +245,5 @@ document.getElementById('btn1').onclick = function() {
     }	
     save()	
     console.log(localStorage);	
-
 }
+
