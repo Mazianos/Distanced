@@ -161,18 +161,6 @@ const seven = [{
     lng: -123.11659868293755
 }]
 
-document.getElementById("fastest-route").onclick = function () {
-    BDf1230()
-};
-
-document.getElementById("average-route").onclick = function () {
-    BDa1230()
-};
-
-document.getElementById("slowest-route").onclick = function () {
-    BDs1230()
-};
-
 // Settings for the polyline for the map.
 const sevenPath = new google.maps.Polyline({
     path: seven,
@@ -233,3 +221,29 @@ function BDs1230() {
     twentyfivePath.setMap(map);
     sevenPath.setMap(map);
 }
+
+document.getElementById("fastest-route").onclick = function () {
+    BDf1230()
+};
+
+document.getElementById("average-route").onclick = function () {
+    BDa1230()
+};
+
+document.getElementById("slowest-route").onclick = function () {
+    BDs1230()
+};
+
+document.getElementById('btn1').onclick = function() {	
+    var val1 = $('[name=origin]').val();	   
+    var val2 = $('[name=destination]').val();	  
+    var val3 = $('[name=time]').val();	
+    function save() {	
+        localStorage.setItem('current', val1);	
+        localStorage.setItem('destination', val2);	
+        localStorage.setItem('time', val3);	
+    }	
+    save()	
+    console.log(localStorage);	
+}
+

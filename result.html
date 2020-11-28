@@ -27,8 +27,8 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
         defer></script>
-
-    <script type="text/javascript" src="result.js"></script>
+    
+    
 
     <style type="text/css">
         #map-container {
@@ -46,14 +46,14 @@
 
         #choices {
             position: absolute;
-            left: 5vw;
-            top: 20vh;
+            left: 0vw;
+            top: 45vh;
             background-color: #4BB3FD;
             text-align: center;
             padding: 0.5em;
         }
 
-        #choices button {
+        #choices input {
             margin-bottom: 1rem;
             padding: 0.5rem;
         }
@@ -91,7 +91,7 @@
             });
         }
 
-        document.getElementById("fastest-route").onclick = function() {fastest()};
+        
     </script>
 </head>
 
@@ -120,13 +120,14 @@
     </div>
     <div id="choices">
         <div>
-            <button type="button" id="fastest-route">Fastest Route</span>
+            <input type="button" value="Fastest Route" id="fastest-route">
         </div>
         <div>
-            <button type="button" id="fastest-route">Average Route</span>
+            <input type="button" value="Average Route" id="fastest-route">
         </div>
         <div>
-            <button type="button" id="fastest-route">Slowest Route</span>
+            <input type="button" value="Slowest Route" id="fastest-route">
         </div>
     </div>
+    <script type="text/javascript" src="result.js"></script>
 </body>
