@@ -179,86 +179,91 @@ window.initMap = function () {
         zoom: 14,
         center: bcit_burnaby,
     });
+
+    // Settings for the polyline for the map.
+    const sevenPath = new google.maps.Polyline({
+        path: seven,
+        geodesic: true,
+        strokeColor: "#AC00E6",
+        strokeOpacity: 0.5,
+        strokeWeight: 4,
+    });
+
+    // Settings for the polyline for the map.
+    const oneThirtyPath = new google.maps.Polyline({
+        path: oneThirty,
+        geodesic: true,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.5,
+        strokeWeight: 4,
+    });
+
+    // Settings for the polyline for the map.
+    const expoBDAPath = new google.maps.Polyline({
+        path: expoBDA,
+        geodesic: true,
+        strokeColor: "#CA573E",
+        strokeOpacity: 0.5,
+        strokeWeight: 4,
+    });
+
+    // Settings for the polyline for the map.
+    const twentyfivePath = new google.maps.Polyline({
+        path: twentyfive,
+        geodesic: true,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.5,
+        strokeWeight: 4,
+    });
+
+    // Settings for the polyline for the map.
+    const expoBDFPath = new google.maps.Polyline({
+        path: expoBDF,
+        geodesic: true,
+        strokeColor: "#CA573E",
+        strokeOpacity: 0.5,
+        strokeWeight: 4,
+    });
+
+    function BDf1230() {
+        twentyfivePath.setMap(map);
+        expoBDFPath.setMap(map);
+    }
+    
+    function BDa1230() {
+        oneThirtyPath.setMap(map);
+        expoBDAPath.setMap(map);
+        expoBDFPath.setMap(map);
+    }
+    
+    function BDs1230() {
+        twentyfivePath.setMap(map);
+        sevenPath.setMap(map);
+    }
+
+    document.getElementById("fastest-route").onclick = function () {
+        console.log("working");
+        BDf1230();
+    };
+    
+    document.getElementById("average-route").onclick = function () {
+        console.log("working1");
+        BDa1230();
+    };
+    
+    document.getElementById("slowest-route").onclick = function () {
+        console.log("working2");
+        BDs1230();
+    };
 };
 
 // Append the 'script' element to 'head'
 document.head.appendChild(script);
 
-// Settings for the polyline for the map.
-const sevenPath = new google.maps.Polyline({
-    path: seven,
-    geodesic: true,
-    strokeColor: "#AC00E6",
-    strokeOpacity: 0.5,
-    strokeWeight: 4,
-});
 
-// Settings for the polyline for the map.
-const oneThirtyPath = new google.maps.Polyline({
-    path: oneThirty,
-    geodesic: true,
-    strokeColor: "#FF0000",
-    strokeOpacity: 0.5,
-    strokeWeight: 4,
-});
 
-// Settings for the polyline for the map.
-const expoBDAPath = new google.maps.Polyline({
-    path: expoBDA,
-    geodesic: true,
-    strokeColor: "#CA573E",
-    strokeOpacity: 0.5,
-    strokeWeight: 4,
-});
 
-// Settings for the polyline for the map.
-const twentyfivePath = new google.maps.Polyline({
-    path: twentyfive,
-    geodesic: true,
-    strokeColor: "#FF0000",
-    strokeOpacity: 0.5,
-    strokeWeight: 4,
-});
 
-// Settings for the polyline for the map.
-const expoBDFPath = new google.maps.Polyline({
-    path: expoBDF,
-    geodesic: true,
-    strokeColor: "#CA573E",
-    strokeOpacity: 0.5,
-    strokeWeight: 4,
-});
-
-function BDf1230() {
-    twentyfivePath.setMap(map);
-    expoBDFPath.setMap(map);
-}
-
-function BDa1230() {
-    oneThirtyPath.setMap(map);
-    expoBDAPath.setMap(map);
-    expoBDFPath.setMap(map);
-}
-
-function BDs1230() {
-    twentyfivePath.setMap(map);
-    sevenPath.setMap(map);
-}
-
-document.getElementById("fastest-route").onclick = function () {
-    console.log("working");
-    // BDf1230();
-};
-
-document.getElementById("average-route").onclick = function () {
-    console.log("working1");
-    // BDa1230();
-};
-
-document.getElementById("slowest-route").onclick = function () {
-    console.log("working2");
-    // BDs1230();
-};
 
 
 
