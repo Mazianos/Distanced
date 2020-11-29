@@ -161,17 +161,28 @@ const seven = [{
     lng: -123.11659868293755
 }]
 
-document.getElementById("fastest-route").onclick = function () {
-    BDf1230()
+// Create the script tag, set the appropriate attributes
+var script = document.createElement('script');
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap';
+script.defer = true;
+
+// Attach your callback function to the `window` object
+window.initMap = function () {
+    // JS API is loaded and available
+    // The location of BCIT Burnaby Campus
+    const bcit_burnaby = {
+        lat: 49.2495,
+        lng: -123.0008
+    };
+    // The map, centered at BCIT Burnaby Campus
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: bcit_burnaby,
+    });
 };
 
-document.getElementById("average-route").onclick = function () {
-    BDa1230()
-};
-
-document.getElementById("slowest-route").onclick = function () {
-    BDs1230()
-};
+// Append the 'script' element to 'head'
+document.head.appendChild(script);
 
 // Settings for the polyline for the map.
 const sevenPath = new google.maps.Polyline({
@@ -233,3 +244,15 @@ function BDs1230() {
     twentyfivePath.setMap(map);
     sevenPath.setMap(map);
 }
+
+document.getElementById("fastest-route").onclick = function () {
+    BDf1230()
+};
+
+document.getElementById("average-route").onclick = function () {
+    BDa1230()
+};
+
+document.getElementById("slowest-route").onclick = function () {
+    BDs1230()
+};

@@ -24,11 +24,11 @@
     <link rel="stylesheet" href="styles/bootstrap.css">
 
     <!-- head content for the map -->
-    <script
+    <!-- <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
-        defer></script>
+        defer></script> -->
 
-    <script type="text/javascript" src="result.js"></script>
+    <script type="text/javascript" src="result.js" defer></script>
 
     <style type="text/css">
         #map-container {
@@ -76,7 +76,7 @@
         const db = firebase.firestore();
     </script>
 
-    <script>
+    <!-- <script>
         // Initialize and add the map
         function initMap() {
             // The location of BCIT Burnaby Campus
@@ -91,8 +91,18 @@
             });
         }
 
-        document.getElementById("fastest-route").onclick = function() {fastest()};
-    </script>
+        document.getElementById("fastest-route").onclick = function () {
+            BDf1230()
+        };
+
+        document.getElementById("average-route").onclick = function () {
+            BDa1230()
+        };
+
+        document.getElementById("slowest-route").onclick = function () {
+            BDs1230()
+        };
+    </script> -->
 </head>
 
 <body>
