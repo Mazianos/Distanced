@@ -246,27 +246,19 @@ function BDs1230() {
 }
 
 document.getElementById("fastest-route").onclick = function () {
-    BDf1230()
+    console.log("working");
+    // BDf1230();
 };
 
 document.getElementById("average-route").onclick = function () {
-    BDa1230()
+    console.log("working1");
+    // BDa1230();
 };
 
 document.getElementById("slowest-route").onclick = function () {
-    BDs1230()
+    console.log("working2");
+    // BDs1230();
 };
 
-document.getElementById('btn1').onclick = function() {	
-    var val1 = $('[name=origin]').val();	   
-    var val2 = $('[name=destination]').val();	  
-    var val3 = $('[name=time]').val();	
-    function save() {	
-        localStorage.setItem('current', val1);	
-        localStorage.setItem('destination', val2);	
-        localStorage.setItem('time', val3);	
-    }	
-    save()	
-    console.log(localStorage);	
-}
+
 
