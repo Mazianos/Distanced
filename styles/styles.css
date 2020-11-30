@@ -196,6 +196,26 @@ label{
     border: white 2px solid;
 
 }
+
+.feedbackbutton{
+    display: inline;
+    width: 100%;
+    margin-right: 1rem;
+    
+}
+#choices {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    opacity: 0.3;    
+}
+#choices:hover{
+    opacity: 1;
+}
+
+#fastest-route{
+    margin-top: 1rem;
+   
+}
 /* media query for mobile size*/
 @media screen and (max-width: 600px) {
     #infoContainer {

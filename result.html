@@ -108,7 +108,7 @@
     <!-- Header Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html"><i>Distanced</i></a>
-        <a class="arrived" href="feedback.html"><i>Arrived/Feedback</i></a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -127,13 +127,17 @@
     </div>
     <div id="choices">
         <div>
-            <input type="button" value="Fastest Route" id="fastest-route">
+            <input class="feedbackbutton" type="button" value="Fastest Route" id="fastest-route">
         </div>
         <div>
-            <input type="button" value="Average Route" id="average-route">
+            <input class="feedbackbutton" type="button" value="Average Route" id="average-route">
         </div>
         <div>
-            <input type="button" value="Slowest Route" id="slowest-route">
+            
+            <input class="feedbackbutton" type="button" value="Slowest Route" id="slowest-route">
+        </div>
+        <div>
+            <input class="feedbackbutton" type="button" value="Feedback" onclick="window.location.href='feedback.html'" >
         </div>
     </div>
     <script type="text/javascript" src="result.js" defer></script>
