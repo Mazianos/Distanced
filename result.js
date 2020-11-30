@@ -107,14 +107,14 @@ const oneThirty = [{
 }]
 
 const expoBDA = [{
-    lat: 49.22587768157755,
-    lng: -123.00397709946816
+    lat: 49.24830137772139,
+    lng: -123.05585822071035
 }, {
     lat: 49.233114734798754,
     lng: -123.0199748612935
 }, {
-    lat: 49.28335755887346,
-    lng: -123.1160100060759
+    lat: 49.22587768157755,
+    lng: -123.00397709946816
 }]
 
 const seven = [{
@@ -160,6 +160,8 @@ const seven = [{
     lat: 49.28342342303933,
     lng: -123.11659868293755
 }]
+
+const linesOnMap = [];
 
 // Create the script tag, set the appropriate attributes
 var script = document.createElement('script');
@@ -226,19 +228,35 @@ window.initMap = function () {
     });
 
     function BDf1230() {
+        while (linesOnMap.length != 0) {
+            linesOnMap.pop().setMap(null)
+        }
         twentyfivePath.setMap(map);
         expoBDFPath.setMap(map);
+        linesOnMap.push(twentyfivePath);
+        linesOnMap.push(expoBDFPath);
     }
     
     function BDa1230() {
+        while (linesOnMap.length != 0) {
+            linesOnMap.pop().setMap(null)
+        }
         oneThirtyPath.setMap(map);
         expoBDAPath.setMap(map);
         expoBDFPath.setMap(map);
+        linesOnMap.push(oneThirtyPath);
+        linesOnMap.push(expoBDFPath);
+        linesOnMap.push(expoBDAPath);
     }
     
     function BDs1230() {
+        while (linesOnMap.length != 0) {
+            linesOnMap.pop().setMap(null)
+        }
         twentyfivePath.setMap(map);
         sevenPath.setMap(map);
+        linesOnMap.push(twentyfivePath);
+        linesOnMap.push(sevenPath);
     }
 
     document.getElementById("fastest-route").onclick = function () {
