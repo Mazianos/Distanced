@@ -297,6 +297,7 @@ window.initMap = function () {
         windowsOnMap.push(twentyfiveInfo);
         windowsOnMap.push(expoBDFInfo);
         windowsOnMap.push(downtownExpoInfo);
+        localStorage.setItem("speed", "Fastest");
     }
     
     function BDa1230() {
@@ -318,6 +319,7 @@ window.initMap = function () {
         windowsOnMap.push(oneThirtyInfo);
         windowsOnMap.push(expoBDAInfo);
         windowsOnMap.push(downtownExpoInfo);
+        localStorage.setItem("speed", "Average");
     }
     
     function BDs1230() {
@@ -337,6 +339,7 @@ window.initMap = function () {
         windowsOnMap.push(twentyfiveInfo);
         windowsOnMap.push(sevenSInfo);
         windowsOnMap.push(downtownBDSInfo);
+        localStorage.setItem("speed", "Slowest");
     }
 
     document.getElementById("fastest-route").onclick = function () {
