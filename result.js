@@ -162,6 +162,7 @@ const seven = [{
 }]
 
 const linesOnMap = [];
+const windowsOnMap = [];
 
 // Create the script tag, set the appropriate attributes
 var script = document.createElement('script');
@@ -191,6 +192,12 @@ window.initMap = function () {
         strokeWeight: 4,
     });
 
+    const sevenSInfo = new google.maps.InfoWindow({
+        content: "Exit bus 025 UBC and board bus 007 Dunbar.",
+        position: {lat: 49.248410307837375,
+            lng: -123.05551635113628}
+    })
+
     // Settings for the polyline for the map.
     const oneThirtyPath = new google.maps.Polyline({
         path: oneThirty,
@@ -199,6 +206,14 @@ window.initMap = function () {
         strokeOpacity: 0.5,
         strokeWeight: 4,
     });
+
+    const oneThirtyInfo = new google.maps.InfoWindow({
+        content: "Board bus 130 Metrotown Stn.",
+        position: {
+            lat: 49.24798571661244,
+            lng: -123.00439946999376
+        }
+    })
 
     // Settings for the polyline for the map.
     const expoBDAPath = new google.maps.Polyline({
@@ -209,6 +224,14 @@ window.initMap = function () {
         strokeWeight: 4,
     });
 
+    const expoBDAInfo = new google.maps.InfoWindow({
+        content: "Exit bus 130 Metrotown Stn and board Westbound Expo Line Skytrain.",
+        position: {
+            lat: 49.22587768157755,
+            lng: -123.00397709946816
+        }
+    })
+
     // Settings for the polyline for the map.
     const twentyfivePath = new google.maps.Polyline({
         path: twentyfive,
@@ -217,6 +240,12 @@ window.initMap = function () {
         strokeOpacity: 0.5,
         strokeWeight: 4,
     });
+
+    const twentyfiveInfo = new google.maps.InfoWindow({
+        content: "Board bus 025 UBC.",
+        position: {lat: 49.25143071416536,
+            lng: -123.00442950017579}
+    })
 
     // Settings for the polyline for the map.
     const expoBDFPath = new google.maps.Polyline({
@@ -227,19 +256,55 @@ window.initMap = function () {
         strokeWeight: 4,
     });
 
+    const expoBDFInfo = new google.maps.InfoWindow({
+        content: "Exit Bus 25 UBC and board Westbound Expo Line Skytrain.",
+        position: {
+            lat: 49.24830137772139,
+            lng: -123.05585822071035
+        }
+    })
+
+    const downtownExpoInfo = new google.maps.InfoWindow({
+        content: "Exit Westbound Expo Line Skytrain, your destination is at street level.",
+        position: {
+            lat: 49.28335755887346,
+            lng: -123.1160100060759
+        }
+    })
+
+    const downtownBDSInfo = new google.maps.InfoWindow({
+        content: "Exit bus 007 Dunbar, you have arrived.",
+        position: {
+            lat: 49.28342342303933,
+            lng: -123.11659868293755
+        }
+    })
+
     function BDf1230() {
         while (linesOnMap.length != 0) {
             linesOnMap.pop().setMap(null)
+        }
+        while (windowsOnMap.length != 0) {
+            windowsOnMap.pop().close()
         }
         twentyfivePath.setMap(map);
         expoBDFPath.setMap(map);
         linesOnMap.push(twentyfivePath);
         linesOnMap.push(expoBDFPath);
+        twentyfiveInfo.open(map);
+        expoBDFInfo.open(map);
+        downtownExpoInfo.open(map);
+        windowsOnMap.push(twentyfiveInfo);
+        windowsOnMap.push(expoBDFInfo);
+        windowsOnMap.push(downtownExpoInfo);
     }
     
     function BDa1230() {
         while (linesOnMap.length != 0) {
             linesOnMap.pop().setMap(null)
+        }
+        while (windowsOnMap.length != 0) {
+            windowsOnMap.pop().close()
         }
         oneThirtyPath.setMap(map);
         expoBDAPath.setMap(map);
@@ -247,16 +312,31 @@ window.initMap = function () {
         linesOnMap.push(oneThirtyPath);
         linesOnMap.push(expoBDFPath);
         linesOnMap.push(expoBDAPath);
+        oneThirtyInfo.open(map);
+        expoBDAInfo.open(map);
+        downtownExpoInfo.open(map);
+        windowsOnMap.push(oneThirtyInfo);
+        windowsOnMap.push(expoBDAInfo);
+        windowsOnMap.push(downtownExpoInfo);
     }
     
     function BDs1230() {
         while (linesOnMap.length != 0) {
             linesOnMap.pop().setMap(null)
         }
+        while (windowsOnMap.length != 0) {
+            windowsOnMap.pop().close()
+        }
         twentyfivePath.setMap(map);
         sevenPath.setMap(map);
         linesOnMap.push(twentyfivePath);
         linesOnMap.push(sevenPath);
+        twentyfiveInfo.open(map);
+        sevenSInfo.open(map);
+        downtownBDSInfo.open(map);
+        windowsOnMap.push(twentyfiveInfo);
+        windowsOnMap.push(sevenSInfo);
+        windowsOnMap.push(downtownBDSInfo);
     }
 
     document.getElementById("fastest-route").onclick = function () {
@@ -277,11 +357,3 @@ window.initMap = function () {
 
 // Append the 'script' element to 'head'
 document.head.appendChild(script);
-
-
-
-
-
-
-
-
