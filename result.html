@@ -23,12 +23,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
 
-    <!-- head content for the map -->
-    <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4D875pV4G0Ejp6PW2e9jCwlEbVTGCjns&callback=initMap&libraries=&v=weekly"
-        defer></script> -->
-
-
     <style type="text/css">
         #map-container {
             height: 94vh;
@@ -74,34 +68,6 @@
 
         const db = firebase.firestore();
     </script>
-
-    <!-- <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of BCIT Burnaby Campus
-            const bcit_burnaby = {
-                lat: 49.2495,
-                lng: -123.0008
-            };
-            // The map, centered at BCIT Burnaby Campus
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 14,
-                center: bcit_burnaby,
-            });
-        }
-
-        document.getElementById("fastest-route").onclick = function () {
-            BDf1230()
-        };
-
-        document.getElementById("average-route").onclick = function () {
-            BDa1230()
-        };
-
-        document.getElementById("slowest-route").onclick = function () {
-            BDs1230()
-        };
-    </script> -->
 </head>
 
 <body>
@@ -117,8 +83,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="trip.html">Plan Trip</a>
                 </li>
-               
-
             </ul>
         </div>
     </nav>
@@ -140,5 +104,5 @@
             <input class="feedbackbutton" type="button" value="Feedback" onclick="window.location.href='feedback.html'" >
         </div>
     </div>
-    <script type="text/javascript" src="result.js" defer></script>
+    <script type="text/javascript" src="scripts/result.js" defer></script>
 </body>
