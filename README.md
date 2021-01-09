@@ -1,8 +1,8 @@
 ## My Web Application (Title)
 
 * [About](#about)
-* [Why we created this app](#why_we_created_this_app)
-* [UI Design](#ui_design)
+* [Why we created this app](#why-we-created-this-app)
+* [UI Design](#ui-design)
 * [Technologies](#technologies)
 
 ## About
