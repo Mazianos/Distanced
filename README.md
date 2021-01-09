@@ -1,46 +1,28 @@
 ## My Web Application (Title)
 
-* [General info](#general-info)
+* [About](#about)
+* [Why we created this app](#why_we_created_this_app)
+* [UI Design](#ui_design)
 * [Technologies](#technologies)
-* [Contents](#content)
 
-## General Info
-This application is used for tracking the amount of people during 
-transit periods to avoid heavy foot traffic. 
-Edited by Johnson, Rimpei, Mazin.
+## About
+This Transit like mobile-first web-application is for portfolio and not for release or monetize.
+This application is used for tracking the amount of people during transit periods to avoid heavy foot traffic. 
+Created by Johnson Lau, Rimpei Shiratori, Mazin Marwan. (BCIT CST students) 
+	
+## Why we created this app
+We created this app as our first project using programming skills that we were learning alongside such as basic HTML, CSS, JS, and data structure using firebase. At the time we started this project, covid-19 was on the rampage in Vancouver, but a lot of people still had to use public transports by various reasons.If we could know when the transits are crowded or not, still considering the fastest, average and slowest route, people could reduce the risk to get in touch with other passengers and manage their time at the same time.
+	
+## UI Design
+To show a map on the web, we embedded google map and to draw a route we used "google.maps.Polyline".
+As for user sign-in, we used firebase authentication.
+![Image of route](https://github.com/Rimpei2000/Distanced/tree/main/images/map.png)
+
 	
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
 * JavaScript
 * Bootstrap 
-* ...
-	
-## Content
-Content of the project folder:
 
-```
- Top level of project folder: 
-├── .gitignore               # Git ignore file
-├── index.html               # landing HTML file, this is what users see when you come to url
-└── README.md
-    timeSchedule.html
-It has the following subfolders and files:
-├── .git                     # Folder for git repo
-├── images                   # Folder for images
-    /blah.jpg                # 
-├── scripts                  # Folder for scripts
-    /blah.js                 # 
-├── styles                   # Folder for styles
-    /blah.css                # 
-
-Firebase hosting files: 
-├── .firebaserc...
-
-
-```
-
-Tips for file naming files and folders:
-* use lowercase with no spaces
-* use dashes (not underscore) for word separation
 
