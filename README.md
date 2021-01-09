@@ -6,6 +6,7 @@
 * [Technologies](#technologies)
 
 ## About
+![Image of logo](/images/logo.png)
 This Transit like mobile-first web-application is for portfolio and not for release or monetize.
 This application is used for tracking the amount of people during transit periods to avoid heavy foot traffic. 
 Created by Johnson Lau, Rimpei Shiratori, Mazin Marwan. (BCIT CST students) 
