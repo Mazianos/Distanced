@@ -18,7 +18,7 @@ We created this app as our first project using programming skills that we were l
 ## UI Design
 To show a map on the web, we embedded google map and to draw a route we used "google.maps.Polyline".
 As for user sign-in, we used firebase authentication.
-![Image of route](../images/map.png)
+![Image of route](/images/map.png)
 
 	
 ## Technologies
