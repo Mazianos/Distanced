@@ -4,6 +4,7 @@
 * [Why we created this app](#why-we-created-this-app)
 * [UI Design](#ui-design)
 * [Technologies](#technologies)
+* [Upcoming Features](#upcoming-features)
 
 ## About
 ![Image of logo](/images/logo.png)
@@ -21,11 +22,18 @@ To show a map on the web, we embedded google map and to draw a route we used "go
 As for user sign-in, we used firebase authentication.
 ![Image of route](/images/map.png)
 
-	
+
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
 * JavaScript
 * Bootstrap 
+
+
+## Upcoming Features
+・ Notifications
+・ Warnings for overcrowded buses
+・ Color labels for better UX
+
 
 
