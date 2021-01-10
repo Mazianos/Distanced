@@ -31,9 +31,9 @@ Technologies used for this project:
 
 
 ## Upcoming Features
-・ Notifications
-・ Warnings for overcrowded buses
-・ Color labels for better UX
+* Notifications
+* Warnings for overcrowded buses
+* Color labels for better UX
 
 
 
